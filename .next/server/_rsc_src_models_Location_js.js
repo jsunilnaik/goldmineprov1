@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_models_Location_js";
+exports.ids = ["_rsc_src_models_Location_js"];
+exports.modules = {
+
+/***/ "(rsc)/./src/models/Location.js":
+/*!********************************!*\
+  !*** ./src/models/Location.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var mongoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mongoose */ \"mongoose\");\n/* harmony import */ var mongoose__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mongoose__WEBPACK_IMPORTED_MODULE_0__);\n\nconst LocationSchema = new (mongoose__WEBPACK_IMPORTED_MODULE_0___default().Schema)({\n    city: {\n        type: String,\n        required: true,\n        trim: true\n    },\n    state: {\n        type: String,\n        required: true,\n        trim: true\n    },\n    tier: {\n        type: Number,\n        enum: [\n            1,\n            2,\n            3,\n            4\n        ],\n        required: true\n    },\n    region: {\n        type: String,\n        trim: true\n    },\n    isActive: {\n        type: Boolean,\n        default: true\n    },\n    userCount: {\n        type: Number,\n        default: 0\n    }\n}, {\n    timestamps: true\n});\n// Compound unique index — one entry per city+state\nLocationSchema.index({\n    city: 1,\n    state: 1\n}, {\n    unique: true\n});\nLocationSchema.index({\n    state: 1\n});\nLocationSchema.index({\n    tier: 1\n});\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((mongoose__WEBPACK_IMPORTED_MODULE_0___default().models).Location || mongoose__WEBPACK_IMPORTED_MODULE_0___default().model('Location', LocationSchema));\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9zcmMvbW9kZWxzL0xvY2F0aW9uLmpzIiwibWFwcGluZ3MiOiI7Ozs7OztBQUFnQztBQUVoQyxNQUFNQyxpQkFBaUIsSUFBSUQsd0RBQWUsQ0FBQztJQUN6Q0csTUFBTTtRQUNKQyxNQUFNQztRQUNOQyxVQUFVO1FBQ1ZDLE1BQU07SUFDUjtJQUNBQyxPQUFPO1FBQ0xKLE1BQU1DO1FBQ05DLFVBQVU7UUFDVkMsTUFBTTtJQUNSO0lBQ0FFLE1BQU07UUFDSkwsTUFBTU07UUFDTkMsTUFBTTtZQUFDO1lBQUc7WUFBRztZQUFHO1NBQUU7UUFDbEJMLFVBQVU7SUFDWjtJQUNBTSxRQUFRO1FBQ05SLE1BQU1DO1FBQ05FLE1BQU07SUFDUjtJQUNBTSxVQUFVO1FBQ1JULE1BQU1VO1FBQ05DLFNBQVM7SUFDWDtJQUNBQyxXQUFXO1FBQ1RaLE1BQU1NO1FBQ05LLFNBQVM7SUFDWDtBQUNGLEdBQUc7SUFDREUsWUFBWTtBQUNkO0FBRUEsbURBQW1EO0FBQ25EaEIsZUFBZWlCLEtBQUssQ0FBQztJQUFFZixNQUFNO0lBQUdLLE9BQU87QUFBRSxHQUFHO0lBQUVXLFFBQVE7QUFBSztBQUMzRGxCLGVBQWVpQixLQUFLLENBQUM7SUFBRVYsT0FBTztBQUFFO0FBQ2hDUCxlQUFlaUIsS0FBSyxDQUFDO0lBQUVULE1BQU07QUFBRTtBQUUvQixpRUFBZVQsd0RBQWUsQ0FBQ3FCLFFBQVEsSUFBSXJCLHFEQUFjLENBQUMsWUFBWUMsZUFBZUEsRUFBQyIsInNvdXJjZXMiOlsiRDpcXFBPRCBQcm9qZWN0XFxHb2xkTWluZSBQcm9cXHYxXFxnb2xkbWluZS1wcm8tbmV4dGpzXFxzcmNcXG1vZGVsc1xcTG9jYXRpb24uanMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IG1vbmdvb3NlIGZyb20gJ21vbmdvb3NlJztcblxuY29uc3QgTG9jYXRpb25TY2hlbWEgPSBuZXcgbW9uZ29vc2UuU2NoZW1hKHtcbiAgY2l0eToge1xuICAgIHR5cGU6IFN0cmluZyxcbiAgICByZXF1aXJlZDogdHJ1ZSxcbiAgICB0cmltOiB0cnVlLFxuICB9LFxuICBzdGF0ZToge1xuICAgIHR5cGU6IFN0cmluZyxcbiAgICByZXF1aXJlZDogdHJ1ZSxcbiAgICB0cmltOiB0cnVlLFxuICB9LFxuICB0aWVyOiB7XG4gICAgdHlwZTogTnVtYmVyLFxuICAgIGVudW06IFsxLCAyLCAzLCA0XSxcbiAgICByZXF1aXJlZDogdHJ1ZSxcbiAgfSxcbiAgcmVnaW9uOiB7XG4gICAgdHlwZTogU3RyaW5nLFxuICAgIHRyaW06IHRydWUsXG4gIH0sXG4gIGlzQWN0aXZlOiB7XG4gICAgdHlwZTogQm9vbGVhbixcbiAgICBkZWZhdWx0OiB0cnVlLFxuICB9LFxuICB1c2VyQ291bnQ6IHtcbiAgICB0eXBlOiBOdW1iZXIsXG4gICAgZGVmYXVsdDogMCxcbiAgfSxcbn0sIHtcbiAgdGltZXN0YW1wczogdHJ1ZSxcbn0pO1xuXG4vLyBDb21wb3VuZCB1bmlxdWUgaW5kZXgg4oCUIG9uZSBlbnRyeSBwZXIgY2l0eStzdGF0ZVxuTG9jYXRpb25TY2hlbWEuaW5kZXgoeyBjaXR5OiAxLCBzdGF0ZTogMSB9LCB7IHVuaXF1ZTogdHJ1ZSB9KTtcbkxvY2F0aW9uU2NoZW1hLmluZGV4KHsgc3RhdGU6IDEgfSk7XG5Mb2NhdGlvblNjaGVtYS5pbmRleCh7IHRpZXI6IDEgfSk7XG5cbmV4cG9ydCBkZWZhdWx0IG1vbmdvb3NlLm1vZGVscy5Mb2NhdGlvbiB8fCBtb25nb29zZS5tb2RlbCgnTG9jYXRpb24nLCBMb2NhdGlvblNjaGVtYSk7XG4iXSwibmFtZXMiOlsibW9uZ29vc2UiLCJMb2NhdGlvblNjaGVtYSIsIlNjaGVtYSIsImNpdHkiLCJ0eXBlIiwiU3RyaW5nIiwicmVxdWlyZWQiLCJ0cmltIiwic3RhdGUiLCJ0aWVyIiwiTnVtYmVyIiwiZW51bSIsInJlZ2lvbiIsImlzQWN0aXZlIiwiQm9vbGVhbiIsImRlZmF1bHQiLCJ1c2VyQ291bnQiLCJ0aW1lc3RhbXBzIiwiaW5kZXgiLCJ1bmlxdWUiLCJtb2RlbHMiLCJMb2NhdGlvbiIsIm1vZGVsIl0sImlnbm9yZUxpc3QiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(rsc)/./src/models/Location.js\n");
+
+/***/ })
+
+};
+;
