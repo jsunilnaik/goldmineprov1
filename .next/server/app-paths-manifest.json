@@ -1,8 +1,11 @@
 {
-  "/api/users/profile/route": "app/api/users/profile/route.js",
-  "/api/reviews/route": "app/api/reviews/route.js",
-  "/api/plans/route": "app/api/plans/route.js",
-  "/api/media/route": "app/api/media/route.js",
+  "/api/mining/status/route": "app/api/mining/status/route.js",
+  "/api/notifications/route": "app/api/notifications/route.js",
+  "/api/mining/start/route": "app/api/mining/start/route.js",
   "/icon.svg/route": "app/icon.svg/route.js",
-  "/page": "app/page.js"
+  "/(auth)/login/page": "app/(auth)/login/page.js",
+  "/(dashboard)/dashboard/page": "app/(dashboard)/dashboard/page.js",
+  "/(dashboard)/mining/page": "app/(dashboard)/mining/page.js",
+  "/(admin)/admin/locations/page": "app/(admin)/admin/locations/page.js",
+  "/(dashboard)/transactions/page": "app/(dashboard)/transactions/page.js"
 }
